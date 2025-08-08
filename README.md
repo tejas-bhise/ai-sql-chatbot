@@ -1,4 +1,3 @@
-<img width="870" height="805" alt="Screenshot 2025-08-09 011802" src="https://github.com/user-attachments/assets/de229e4e-34de-45b1-8927-0a9c994e6121" />
 # 🤖 AI SQL Query Generator
 
 A simple web application that takes a CSV file and a plain English question, then uses the Google Gemini API to generate the corresponding SQL query and visualize the result.
@@ -56,3 +55,4 @@ Tailwind CSS for styling.
 Chart.js for data visualization.
 
 AlaSQL.js for in-browser SQL database capabilities.
+<img width="570" height="505" alt="Screenshot 2025-08-09 011802" src="https://github.com/user-attachments/assets/de229e4e-34de-45b1-8927-0a9c994e6121" />
