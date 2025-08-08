@@ -51,8 +51,8 @@ Visualization: If the query returns data, Chart.js is used to render a bar chart
 This project runs entirely in the browser using the following libraries delivered via CDN:
 
 Tailwind CSS for styling.
-
 Chart.js for data visualization.
-
 AlaSQL.js for in-browser SQL database capabilities.
-<img width="570" height="505" alt="Screenshot 2025-08-09 011802" src="https://github.com/user-attachments/assets/de229e4e-34de-45b1-8927-0a9c994e6121" />
+
+
+<img width="670" height="505" alt="Screenshot 2025-08-09 011802" src="https://github.com/user-attachments/assets/de229e4e-34de-45b1-8927-0a9c994e6121" />
