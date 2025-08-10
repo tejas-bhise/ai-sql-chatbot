@@ -1,0 +1,16 @@
+
+# Environment variables
+# This is the most important line: it prevents your secret API key from being uploaded.
+.env
+
+# Dependencies
+/node_modules
+
+# Log files
+npm-debug.log*
+yarn-error.log
+yarn-debug.log
+
+# System files
+.DS_Store
+Thumbs.db
