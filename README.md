@@ -1,58 +1,124 @@
-# 🤖 AI SQL Query Generator
+````markdown
+# 🤖 AI SQL Chatbot
 
-A simple web application that takes a CSV file and a plain English question, then uses the Google Gemini API to generate the corresponding SQL query and visualize the result.
+**Natural Language → SQL Queries → Instant Insights**  
+AI-powered chatbot that converts your questions into SQL queries and retrieves results directly from CSV datasets.
 
-## ✨ Features
+---
 
-- **Upload CSV:** Easily upload your own dataset in CSV format.
-- **Natural Language Input:** Ask questions about your data in plain English (e.g., "show me the average salary by department").
-- **AI-Powered SQL Generation:** Uses the Gemini 1.5 Flash model to convert your question into a valid SQL query.
-- **In-Browser Query Execution:** Runs the generated query against your data directly in the browser using AlaSQL.js.
+## 🚀 Live Demo
+*(You can host this on Render, Vercel, or any static server)*
 
-## 🛠️ Setup and Usage
+---
 
-Follow these steps to get the project running on your local machine.
-1. Clone the Repository
-2. Get Your API Key
-This project requires a Google AI API key to function.
+## 📸 Screenshots
 
-Visit Google AI Studio to create your API key.
+| Chat Interface | SQL Query Output |
+|----------------|-----------------|
+| ![Chatbot UI](https://via.placeholder.com/400x250.png?text=Chatbot+UI) | ![SQL Results](https://via.placeholder.com/400x250.png?text=SQL+Query+Results) |
 
-Copy the generated API key.
+---
 
-3. Configure the API Key
-Open the script.js file in your code editor.
+## 🧠 About the Project
+AI SQL Chatbot allows you to interact with your datasets using **natural language**.  
+Instead of manually writing SQL queries, just ask questions in plain English and get instant results.
 
-Find the following line at the top of the file:
+**Key Features**  
+- 🔹 Convert **natural language → SQL queries**  
+- 🔹 Uses **Google Gemini API** for AI-powered query generation  
+- 🔹 Run SQL queries **directly in-browser** using [AlaSQL.js](https://github.com/agershun/alasql)  
+- 🔹 Upload **CSV datasets** easily  
+- 🔹 Clean, simple, beginner-friendly UI  
 
-JavaScript
+---
 
-const apiKey = "YOUR_GOOGLE_AI_API_KEY";
-Replace "YOUR_GOOGLE_AI_API_KEY" with the actual key you copied from Google AI Studio.
+## 🛠 Tech Stack
+- **Frontend:** HTML, CSS, JavaScript  
+- **Backend:** Optional Python + FastAPI for API calls  
+- **Libraries:** AlaSQL.js, Chart.js (for visualization)  
+- **AI:** Google Gemini API  
 
-🔒 Security Warning:
-Never commit your API key to a public repository. The method used in this project (placing the key in client-side JavaScript) is for demonstration purposes only. In a production environment, you should use a backend server to act as a proxy, keeping your API key secure.
+---
 
-4. Run the Application
-No special server is needed. Simply open the index.html file in your favorite web browser.
+## ⚡ How to Run Locally
 
-🚀 How It Works
-File Upload: When a user uploads a CSV, the browser reads its headers and data using JavaScript's FileReader API. The filename and column names are stored to create a schema.
+1️⃣ **Clone the Repository**
+```bash
+git clone https://github.com/tejas-bhise/ai-sql-chatbot.git
+cd ai-sql-chatbot
+````
 
-Prompt Engineering: The schema, along with the user's English question, is formatted into a specific prompt for the Gemini language model.
+2️⃣ **Install Dependencies** (if using Python backend)
 
-API Call: A fetch request is sent to the Google Gemini API with the prompt.
+```bash
+pip install -r requirements.txt
+```
 
-Query Execution: The AI returns an SQL query as a string. This query is then executed on the stored CSV data using AlaSQL.js, a JavaScript SQL database.
+3️⃣ **Set up Environment Variables**
+Create a `.env` file:
 
-Visualization: If the query returns data, Chart.js is used to render a bar chart, using the first column for labels and the second for values.
+```
+GEMINI_API_KEY=your_api_key_here
+```
 
-📦 Dependencies
-This project runs entirely in the browser using the following libraries delivered via CDN:
+4️⃣ **Run the Project**
 
-Tailwind CSS for styling.
-Chart.js for data visualization.
-AlaSQL.js for in-browser SQL database capabilities.
+* If frontend-only: open `index.html` in your browser.
+* If backend is used:
 
+```bash
+python app.py
+```
 
-<img width="670" height="505" alt="Screenshot 2025-08-09 011802" src="https://github.com/user-attachments/assets/de229e4e-34de-45b1-8927-0a9c994e6121" />
+Open browser at: `http://127.0.0.1:8000`
+
+---
+
+## 📂 Project Structure
+
+```
+ai-sql-chatbot/
+├── index.html          # Frontend interface
+├── style.css           # Styling
+├── script.js           # Client-side JS + API calls
+├── sample_data.csv     # Example dataset
+├── .env                # API key (ignored in Git)
+├── README.md           # Project documentation
+└── requirements.txt    # Python dependencies
+```
+
+---
+
+## 🚀 Future Enhancements
+
+* [ ] Support for multiple file formats (Excel, JSON)
+* [ ] User authentication & saved chats
+* [ ] Advanced visual analytics dashboard
+* [ ] Dark mode UI
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repo
+2. Create a feature branch
+3. Submit a pull request
+
+---
+
+## 📜 License
+
+This project is under the **MIT License** — free to use, modify, and distribute.
+
+---
+
+## 👨‍💻 Author
+
+Tejas Bhise
+
+✨ Made with ❤ using Gemini + SQL + FastAPI ✨
+
+```
+```
